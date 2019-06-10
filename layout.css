@@ -48,6 +48,10 @@ img {
   margin-top: 30px;
   text-align: center;
 }
+.center {
+  display: block;
+  justify-content: center;
+}
 table {
   max-width: 100%;
 }
