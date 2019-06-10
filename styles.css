@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/*
+  	Title: All-Year Sports Page
+    Author: Eric Pitts
+    Date: 05/20/2019
+		file name: styles.css */
+
+html {
+	background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6, th, td, caption {
+	font-weight: normal;
+}
+
+nav {
+  background-color: hsl(0, 0%, 100%);
+}
+
+li > a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: black;
+}
+/* Section Styles */
+
+body {
+	background-color: grey;
+}
+
+header {
+	font-size: 3em;
+	text-shadow: 4px 4px 4px #89cff0;
+}
+
+h1 {
+	font-family: 'Yeon Sung', cursive;
+	text-align: center;
+	text-shadow: 2px 2px 4px #89cff0;
+}
+
+nav {
+	font-family: 'Yeon Sung', cursive;
+	text-align: center;
+}
+
+h1 {
+	font-family: clear;
+	text-shadow: none;
+}
+
+h2 {
+	background-size: cover;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+h2 a img {
+	-webkit-filter: opacity(0.6);
+	filter: opacity(0.6);
+	border-radius: 20px;
+}
+
+footer {
+	font-family: clear;
+	font-size: small;
+	text-shadow: none;
+}
+
+/* Table styles
+M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML)
+I've styled the table to look like a generic baseball scoreboard with styles that draw attention to the most important information.
+*/
+table{
+	background: white;
+	border: 5px solid black;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	border-collapse: collapse;
+	padding-top: 10%
+}
+
+table th, table td{
+	text-align: center;
+	border: 1px solid black;
+}
+
+/* Column Styles */
+col#firstCol{
+  width: 17%;
+	font-weight: bold;
+}
+
+col#dataCols{
+  width: 5%;
+	font-weight: normal;
+}
+
+col#statCol{
+	width: 7%;
+	font-weight: bolder;
+}
+
+/*
+   Mobile Styles: 0px to 640px
+	 *****M5LO3 Use media queries to format a page differently for phones vs. PCs. (CSS, note where these are in your CSS and describe the overall impact they have on the site)
+	 This styling shrinks the size of the navigation links and keeps images contained.
+*/
+
+@media only screen and (max-width: 640px){
+	header{
+		font-size: 1em;
+	}
+
+	img{
+		max-width: 80%;
+	}
+}

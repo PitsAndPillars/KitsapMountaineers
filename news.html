@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8"/>
+
+<!--
+    Title: Fall Sports Page
+    Author: Eric Pitts
+    Date: 05/20/2019
+		file name: news.html
+
+   -->
+   <title>Mountaineers News</title>
+
+	 <link href="https://fonts.googleapis.com/css?family=Yeon+Sung" rel="stylesheet" />
+	 <link href="styles.css" type="text/css" rel="stylesheet" />
+	 <link href="layout.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+				<li><a href="index.html"> <img src="mtlogo.png" width= "90" height="60" alt="Mountaineers"/> </a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="schedule.html">SCHEDULE</a></li>
+        <li><a href="team.html">TEAM</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+	</header>
+  <article>
+		<table id="recentscore">
+			<caption> Home vs Napa Valley No Sox <br> May 17, 2019 </caption>
+			<!-- M6LO3 Demonstrate how to create a table (HTML, explain table's purpose; it needs to be appropriate data for a table, and have at least 2 columns and 3 rows, appropriate use of thead/tbody/tfooter, and cells using th/td appropriately)
+		 	This table is a scoreboard of a fictional game played between 2 fictional teams.-->
+			<colgroup>
+				<col id="firstCol"/>
+				<col id="dataCols" span="9"/>
+				<col id="statCol" span="3"/>
+			</colgroup>
+			<thead>
+				<tr>
+					<th> </th>
+					<th>1st</th>
+					<th>2nd</th>
+					<th>3rd</th>
+					<th>4th</th>
+					<th>5th</th>
+					<th>6th</th>
+					<th>7th</th>
+					<th>8th</th>
+					<th>9th</th>
+					<th>R</th>
+					<th>H</th>
+					<th>E</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Mountaineers</th>
+					<td>0</td>
+					<td>1</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>0</td>
+					<td>3</td>
+					<td>0</td>
+					<td>2</td>
+					<td>8</td>
+					<td>11</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<th>No Sox</th>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>7</td>
+					<td>9</td>
+					<td>1</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>Highlights</th>
+					<td colspan="12"> Jojima-2/4, 1SB, 2R. Henry-1/4, 3R Homer in 7th.  </td> <!-- M6LO4 Demonstrate how to span multiple columns in a table
+					this spans the entire inning and stat columns for better reading of the game highlights.-->
+				</tr>
+			</tfoot>
+		</table>
+  </article>
+	<footer>
+		<a href="index.html"> <img src="mtlogo.png" width= "45" height="30" alt="Olympians" /> </a>
+		<p>
+			&#916; Kitsap Mountaineers &#916; 2019
+		</p>
+	</footer>
+</body>
+
+</html>
