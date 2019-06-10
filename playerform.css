@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*
+  Title: Styles for player try-out form
+  Author: Eric Pitts
+  Date: 06/10/2019
+	file name: playerform.css
+*/
+
+/*M7LO11 Demonstrate how to format a form with CSS (this file is dedicated to formatting the player try-out form and displays the form in a easily distinguishable section with a generic look and submit button that matches the team colors)*/
+
+  label {
+    display: block;
+    float: left;
+    clear: left;
+    margin: 5px;
+    width: 100px;
+  }
+
+  input, select {
+    display: block;
+    float: left;
+    margin: 5px 0px;
+    width: 200px;
+  }
+
+  textarea {
+    display: block;
+    float: left;
+    margin: 5px;
+    height: 100px;
+    width: 200px;
+  }
+
+  form p {
+    clear: left;
+    text-align: center;
+  }
+
+  input[type='submit'] {
+    background-color: rgba(137,207,240,1);
+    color: rgb(255,255,255);
+    border-radius: 10px;
+    float: none;
+    display: inline;
+    font-size: 1.1em;
+    height: 30px;
+    width: 150px;
+  }
