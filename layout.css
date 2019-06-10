@@ -1,88 +1,73 @@
 @charset "utf-8";
-
 /*
   	Title: layout-sitewide-styles
     Author: Eric Pitts
     Date: 06/10/2019
 		file name: layout.css */
-
 header {
   position: relative;
   width: inherit;
 }
-
 nav {
 	display: table;
 	width: 100%;
   background-image: linear-gradient(white, white, black)
 }
-
 nav > ul {
 	display: table-row;
 }
-
 nav > ul > li {
 	display: table-cell;
 	text-align: center;
 }
-
 nav > ul > li > a {
 	display: block;
 }
-
 body {
 	margin-left: 10%;
 	margin-right: 10%;
   padding-bottom: 1px;
   border-radius: 20px;
 }
-
 img {
   max-width: 100%;
 }
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
+.g {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+  border: 1.5em, black;
+}
+.video {
+  margin-top: 30px;
+  text-align: center;
+}
 table {
   max-width: 100%;
 }
-
 body > ul{
   display: flex;
   background: white;
-  flex-wrap: wrap;
-  /*
-  M5LO6 Demonstrate use of properties of flexbox items (CSS, document what flexbox item properties you use and their impacts, for one CSS selector using them)
-  *** this property makes it so that each month is positioned correctly regardless of viewport size.*/
-  flex-direction: column;
-  /*
-  M5LO7 Demonstrate use of properties of flexbox containers (CSS, document what flexbox container properties you use and their impacts, for one CSS selector using them)
-  *** this property keeps the months set of game displayed in rows, while the property for each indiviudal month lists the games in a column. */
   padding: 5px;
   font-size: 1em;
   border: 5px solid black;
   width: 20%;
   text-align: center;
 }
-/* M5LO5 Demonstrate the use of flexboxes on a web page (CSS document where you use flexboxes; explain their impact on the page's layout; this can be a new page or a redo of an existing page)
-***The flexboxes are for each game in the schedule and the month they take place in.
-*/
-
 body > p {
   font-size: 2em;
   text-align: center;
 }
-
 h2 {
   float: none;
   clip: inherit;
  }
-
 footer {
   position: relative;
   margin-left: 10%;
